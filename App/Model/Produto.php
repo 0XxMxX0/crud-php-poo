@@ -7,6 +7,12 @@
         private $name;
         private $description;
 
+        public function __construct($id, $name, $description){   
+            $this->setId($id);
+            $this->setname($name);
+            $this->setDescription($description);
+        }
+
         function getId(){
             return  $this->id;
         }

@@ -24,10 +24,9 @@
                 $resultado = $select->fetchAll(\PDO::FETCH_ASSOC);
                 return $resultado;
             } else {
-                return ['Sem produtos cadastrados'];
+                return [];
             }
         }
-
         public function update(Produto $produto){
             $sql = "UPDATE produto SET name = ?, description = ? WHERE id = ?";
 
